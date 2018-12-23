@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
-import './App.css';
 
 class App extends Component {
   render() {
@@ -11,6 +10,7 @@ class App extends Component {
           <p>
             Edit <code>src/App.tsx</code> and save to reload.
           </p>
+
           <a
             className="App-link"
             href="https://reactjs.org"
@@ -20,6 +20,12 @@ class App extends Component {
             Learn React
           </a>
         </header>
+
+        <style jsx global>{`
+          body {
+            background: red
+          }
+        `}</style>
       </div>
     );
   }
